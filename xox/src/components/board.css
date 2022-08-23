@@ -1,0 +1,24 @@
+.board-container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.board-row{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+}
+.button{
+    margin-top: 3rem;
+    background-color:aquamarine;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.button:hover{
+    background-color: aliceblue;
+}

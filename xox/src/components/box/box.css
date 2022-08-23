@@ -1,0 +1,23 @@
+.box-container{
+    width:150px;
+    height: 150px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.box-container:hover{
+    background-color: aquamarine;
+}
+.value{
+    font-size:70px;
+}
+
+/*----------------MEDIA QUERIES(SMALL DEVICES)------------*/
+@media screen and (max-width:600px) {
+    .box-container{
+        width: 80px;
+        height: 120px;
+}
+}
