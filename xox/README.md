@@ -4,6 +4,9 @@
 
 ![tic-tac-toe](https://user-images.githubusercontent.com/99674716/186444412-80f77a72-3e1a-4628-a253-74494f151b90.gif)
 
+## Live Demo
+[Demo](https://letsplay-tic-tac-toe.netlify.app/)
+
 ## Installation 
 
 * Git clone https://github.com/AkinGurler/Tic-Tac-Toe-React.git
