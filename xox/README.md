@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Web-Fitness
+### Tic-Tac-Toe Game With 2 Person
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+![tic-tac-toe](https://user-images.githubusercontent.com/99674716/186444412-80f77a72-3e1a-4628-a253-74494f151b90.gif)
 
-In the project directory, you can run:
+## Live Demo
+[Demo](https://fitnessclubdemo.netlify.app/)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Installation 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Git clone https://github.com/AkinGurler/WebFitness.git
+* in project
+```bash 
+  npm install 
+  
+```
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Used Technologies
+There are 2 versions of the app related to state management redux and hooks, you can check from branches.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* React
+* CSS 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[![My Skills](https://skills.thijs.gg/icons?i=react,css&theme=light)](https://skills.thijs.gg)
 
-### `npm run eject`
+## Gainz
+* Array Operation
+* Array.some() method
+* Array.fill() method
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Communication
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[![gmail](https://user-images.githubusercontent.com/99674716/185644867-49abb98d-3901-4011-ad5f-0b2d90bf024e.png)](mailto:akingurler.b@gmail.com)
+[![whatsapp](https://user-images.githubusercontent.com/99674716/185643726-5f3fb3f2-bd11-4cd1-baf4-16cd6dae9d3b.png)](http://api.whatsapp.com/send?phone=905534600027)
