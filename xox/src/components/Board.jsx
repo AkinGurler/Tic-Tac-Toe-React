@@ -2,27 +2,43 @@ import React, { useState } from 'react'
 import Box from './box/Box'
 import './board.css'
 
-const table = [[], [], []];
-console.log(table)
+/* const  = [["","",""], ["","",""], []]; */
+
 const Board = () => {
     const [turn, setTurn] = useState("X")
     const [winner, setWinner] = useState("")
-
-
+    const [draw, setDraw] = useState("")
+    const [table, setTable] = useState([
+        [null, null, null],
+        [null, null, null],
+        [null, null, null]
+    ]
+    );
+    
+    
     const changeTurn = (row, column) => {
         table[row][column] = turn
+       
 
         const winner = checkWin();
         if (!winner) {
-            //nothing
+            if(table.some(row => row.includes(null))){
+            //Game Not Finished
+            }
+            //DRAW
+            else{
+                setDraw("Draw")
+            }
+
         } else {
             setWinner(winner)
-            console.log("winner")
+            let newArr = Array(3).fill(0).map(row => new Array(3).fill(winner))
+            setTable(newArr)
         }
         turn === "X" ? setTurn("O") : setTurn("X")
-        console.log(table)
-        console.log(table.length)
-        
+
+
+
 
 
     }
@@ -33,9 +49,9 @@ const Board = () => {
             const row2 = table[i][1];
             const row3 = table[i][2];
             if (row1 === row2 && row2 === row3 && row1) {
-                console.log("row check")
                 return row1;
             }
+
             //----------COLUMN WINS------------
             for (let j = 0; j < table.length; j++) {
                 const column1 = table[0][j];
@@ -44,7 +60,6 @@ const Board = () => {
                 if (column1 === column2 && column2 === column3 && column1) {
                     return column1;
                 }
-
             }
             //----------CROSS WINS------------
             const crossRight1 = table[0][0]
@@ -61,11 +76,16 @@ const Board = () => {
                 return crossLeft1;
             }
         }
-        
+
+
 
     }
-    const restart=()=>{
-        window.location.reload();
+    const restart = () => {
+        let newArr = Array(3).fill(null).map(row => new Array(3).fill(null))
+        setTable(newArr)
+        setTurn("X")
+        setWinner("")
+        setDraw("")
     }
 
 
@@ -74,27 +94,33 @@ const Board = () => {
         <div className="board-container">
             <h2>{turn} TURN</h2>
             <div className="board-row">
-                <Box row={0} column={0} turn={turn} changeTurn={changeTurn} />
-                <Box row={0} column={1} turn={turn} changeTurn={changeTurn} />
-                <Box row={0} column={2} turn={turn} changeTurn={changeTurn} />
+                <Box value={table[0][0]} row={0} column={0} turn={turn} changeTurn={changeTurn} />
+                <Box value={table[0][1]} row={0} column={1} turn={turn} changeTurn={changeTurn} />
+                <Box value={table[0][2]} row={0} column={2} turn={turn} changeTurn={changeTurn} />
             </div>
             <div className="board-row">
-                <Box row={1} column={0} turn={turn} changeTurn={changeTurn} />
-                <Box row={1} column={1} turn={turn} changeTurn={changeTurn} />
-                <Box row={1} column={2} turn={turn} changeTurn={changeTurn} />
+                <Box value={table[1][0]} row={1} column={0} turn={turn} changeTurn={changeTurn} />
+                <Box value={table[1][1]} row={1} column={1} turn={turn} changeTurn={changeTurn} />
+                <Box value={table[1][2]} row={1} column={2} turn={turn} changeTurn={changeTurn} />
             </div>
             <div className="board-row">
-                <Box row={2} column={0} turn={turn} changeTurn={changeTurn} />
-                <Box row={2} column={1} turn={turn} changeTurn={changeTurn} />
-                <Box row={2} column={2} turn={turn} changeTurn={changeTurn} />
+                <Box value={table[2][0]} row={2} column={0} turn={turn} changeTurn={changeTurn} />
+                <Box value={table[2][1]} row={2} column={1} turn={turn} changeTurn={changeTurn} />
+                <Box value={table[2][2]} row={2} column={2} turn={turn} changeTurn={changeTurn} />
             </div>
             <button className='button' onClick={() => restart()}>Play Again</button>
             {winner && (
-                
-				<>
-					<h2>{winner} is the winner</h2>
-				</>
-			)}
+
+                <>
+                    <h2>{winner} is the winner</h2>
+                </>
+            )}
+            {draw && (
+
+                <>
+                    <h2>DRAW PLAY AGAIN</h2>
+                </>
+            )}
         </div>
     )
 }

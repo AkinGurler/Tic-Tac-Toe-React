@@ -1,18 +1,19 @@
 import React, { useState } from 'react'
 import "./box.css"
 const Box = (props) => {
-    const [value, setValue] = useState("")  
+   
     const changeValue=()=>{
-        if(value ===""){
-            setValue(props.turn)
+        if(props.value==null){
             props.changeTurn(props.row,props.column)
         }
+            
     }
-
+    
+    
   return (
     <div className="box-container" onClick={changeValue}>
        
-       <div className="value" >{value}</div> 
+       <div className="value" >{props.value}</div> 
     </div>
   )
 }
