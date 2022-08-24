@@ -1,18 +1,12 @@
-# Web-Fitness
+# Tic-Tac-Toe React
 ### Tic-Tac-Toe Game With 2 Person
 
 
 ![tic-tac-toe](https://user-images.githubusercontent.com/99674716/186444412-80f77a72-3e1a-4628-a253-74494f151b90.gif)
 
-## Live Demo
-[Demo](https://fitnessclubdemo.netlify.app/)
-
-
-
-
 ## Installation 
 
-* Git clone https://github.com/AkinGurler/WebFitness.git
+* Git clone https://github.com/AkinGurler/Tic-Tac-Toe-React.git
 * in project
 ```bash 
   npm install 
