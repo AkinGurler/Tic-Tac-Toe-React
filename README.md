@@ -26,7 +26,7 @@ There are 2 versions of the app related to state management redux and hooks, you
 [![My Skills](https://skills.thijs.gg/icons?i=react,css&theme=light)](https://skills.thijs.gg)
 
 ## Gainz
-* Array Operation
+* Array Operations
 * Array.some() method
 * Array.fill() method
 
